@@ -9,7 +9,7 @@ def call(){
      stage("Paso 2: Testear"){
             
             sh "echo 'Test Code!'"
-            // Run Maven on a Unix agent.
+            // Run Maven on a Unix agent
             sh "mvn clean test -e"
         
     }
