@@ -19,6 +19,7 @@ pipeline {
                     switch(params.compileTool)
                     {
                         case 'Maven':
+                        echo "Maven"
                             def ejecucion = load 'maven.groovy'
                             ejecucion.call()
                         break;
